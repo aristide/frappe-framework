@@ -1,7 +1,7 @@
 # frappe-framework
 frappe framework dev environment from [frappe docker repository](https://github.com/frappe/frappe_docker)
 
-prerequisistes:
+prerequisites:
  - [Docker](https://docs.docker.com/get-docker/)
  - [docker-compose](https://docs.docker.com/compose/)
  - [git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
