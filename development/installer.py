@@ -210,9 +210,11 @@ def create_site_in_bench(args):
             "new-site",
             f"--db-host=mariadb",  # Should match the compose service name
             f"--db-type={args.db_type}",  # Add the selected database type
+            f"--db-name=development.localhost.db",  # Database name
             f"--no-mariadb-socket",
             f"--db-root-password=123",  # Replace with your MariaDB password
             f"--admin-password={args.admin_password}",
+            f"--set-default",
         ]
     else:
         cprint("Set db_host", level=3)
@@ -225,8 +227,10 @@ def create_site_in_bench(args):
             "new-site",
             f"--db-host=postgresql",  # Should match the compose service name
             f"--db-type={args.db_type}",  # Add the selected database type
+            f"--db-name=development.localhost.db",  # Database name
             f"--db-root-password=123",  # Replace with your PostgreSQL password
             f"--admin-password={args.admin_password}",
+            f"--set-default",
         ]
     apps = os.listdir(f"{os.getcwd()}/{args.bench_name}/apps")
     apps.remove("frappe")
