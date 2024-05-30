@@ -25,3 +25,8 @@ After the extensions are installed, you can:
 - Launch the command, from Command Palette (Ctrl + Shift + P) `Dev Containers: Reopen in Container`. You can also click in the bottom left corner to access the remote container menu.
 
 
+The VSCode Dev Container extension will automatically initiate the deployment of a default site named "development.localhost". Please be patient during this process, as it may take some time. Once deployment is complete, you can begin Frappe development by running the bench start command in the /workspace/development/frappe-bench directory.
+
+![Runnin bench](img/running_bench.png)
+
+Open the default site on [localhost:8000](http://localhost:8000)
