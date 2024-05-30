@@ -30,3 +30,7 @@ The VSCode Dev Container extension will automatically initiate the deployment of
 ![Runnin bench](img/running_bench.png)
 
 Open the default site on [localhost:8000](http://localhost:8000)
+
+⚠️ default credentials:
+  - login: administrator
+  - password: admin
