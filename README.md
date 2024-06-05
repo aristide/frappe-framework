@@ -14,9 +14,13 @@ prerequisites:
 VSCode should automatically inquire you to install the required extensions, that can also be installed manually as follows:
 
 - Install Dev Containers for VSCode
-  - through command line `code --install-extension ms-vscode-remote.remote-containers`
+  - through command line 
+    - `code --install-extension ms-vscode-remote.remote-containers`
+    - `code --install-extension cweijan.vscode-database-client2`
+    - `code --install-extension ms-azuretools.vscode-docker`
+    - `code --install-extension pomdtr.excalidraw-editor`
   - clicking on the Install button in the Vistual Studio Marketplace: [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-  - View: Extensions command in VSCode (Windows: Ctrl+Shift+X; macOS: Cmd+Shift+X) then search for extension `ms-vscode-remote.remote-containers`
+  - View: Extensions command in VSCode (Windows: Ctrl+Shift+X; macOS: Cmd+Shift+X) then search for extensions : `ms-vscode-remote.remote-containers`, `cweijan.vscode-database-client2`, `ms-azuretools.vscode-docker` and `pomdtr.excalidraw-editor`
 
 After the extensions are installed, you can:
 
@@ -24,6 +28,7 @@ After the extensions are installed, you can:
   - `code .`
 - Launch the command, from Command Palette (Ctrl + Shift + P) `Dev Containers: Reopen in Container`. You can also click in the bottom left corner to access the remote container menu.
 
+![Remote container button](img/containerbutton.png)
 
 The VSCode Dev Container extension will automatically initiate the deployment of a default site named "development.localhost". Please be patient during this process, as it may take some time. Once deployment is complete, you can begin Frappe development by running the bench start command in the /workspace/development/frappe-bench directory.
 
