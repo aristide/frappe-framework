@@ -1,3 +1,17 @@
 {
   //"python.defaultInterpreterPath": "${workspaceFolder}/frappe-bench/env/bin/python"
+  "sqltools.connections": [
+    {
+        "mysqlOptions": {
+            "authProtocol": "default"
+        },
+        "previewLimit": 50,
+        "server": "mariadb",
+        "port": 3306,
+        "driver": "MariaDB",
+        "name": "MariaDB",
+        "username": "root",
+        "password": "123"
+    }
+]
 }
